@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+</head>
+<body>
+    <!-- <script>
+
+        var nota1 = 1;
+        var nota2 = 2;
+        var nota3 = 3;
+        var nota4 = 4;
+
+        var media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        alert("media: " + media);
+
+    </script> -->
+
+    <script>
+
+      
+        function somarNotas(nota1,nota2,nota3,nota4) {
+            var result = (nota1 + nota2 + nota3 + nota4) / 4 ;
+            alert("resultado das notas foi de: " + result);
+        }
+
+        var nota1 = parseFloat(prompt("Digite a primeira nota: "));
+        var nota2 = parseFloat(prompt("Digite a segunda nota: "));
+        var nota3 = parseFloat(prompt("Digite a terceira nota: "));
+        var nota4 = parseFloat(prompt("Digite a quarta nota: "));
+
+        somarNotas(nota1, nota2, nota3, nota4);
+
+
+    </script>
+    
+</body>
+</html>

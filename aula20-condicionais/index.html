@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebibas álcoolicas baratas</title>
+</head>
+<body>
+    <div class="form">
+        <div class="form-content">
+            <h1>Verificação de idade</h1>
+            <p>Por favor, antes de entrar no site, digite sua idade</p>
+            <input type="number" name="" id="idadeInput">
+            <button onclick="verificarIdade()">Verificar idade</button>
+        </div>
+
+    </div>
+
+    <script>
+        function verificarIdade(){
+            var idade = parseInt(document.getElementById("idadeInput").value);
+            if(idade >= 18) {
+                window.location.href = "maior.html";
+            } else {
+                window.location.href = "menor.html";
+            }
+        }
+    </script>
+    
+</body>
+</html>
